@@ -1,142 +1,144 @@
-# Audio-Amplifier-with-Tone-Control-
-This is contains all the details about the analog electronics project done under EN2111 Electronic Circuit Design Semester 4 Project  where we build an audio amplifier with tone control.
+<p align="center">
+  <img src="assets/banner.png" alt="Audio Amplifier Banner" width="100%">
+</p>
 
-# 🎵 Analog Audio Amplifier with Tone Control (Bass, Mid, Treble)
+<h1 align="center">🎧 Analog Audio Amplifier with 3-Band Tone Control</h1>
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
-![GitHub repo size](https://img.shields.io/github/repo-size/your-username/audio-tone-control-amplifier)
-![GitHub last commit](https://img.shields.io/github/last-commit/your-username/audio-tone-control-amplifier)
+<p align="center">
+  Built with ❤️ using analog electronics and TDA2003A<br>
+  <strong>Bass • Mid • Treble | Pure Class AB Sound</strong>
+</p>
 
----
-
-## 🛠️ Project Overview
-
-This project is a **Class AB analog audio amplifier** featuring a **3-band tone control system (Bass, Mid, Treble)** and a **TDA2003A power amplifier stage**. Designed and developed with **pure analog components**, this amplifier delivers rich sound quality with customizable tonal response.
-
-> 🚧 Built with ❤️ by our passionate hardware team!
-
----
-
-## 📸 Project Gallery
-
-| Front View | Tone Control Stage | TDA2003A Power Stage |
-|------------|--------------------|----------------------|
-| ![Front View](assets/front_view.jpg) | ![Tone Control](assets/tone_control.jpg) | ![TDA2003A Stage](assets/power_stage.jpg) |
-
-> ✨ For a video demonstration, [click here](https://your-youtube-demo-link.com) *(optional)*
+<p align="center">
+  <img src="https://img.shields.io/badge/Technology-Analog-blueviolet?style=for-the-badge" alt="Tech Badge">
+  <img src="https://img.shields.io/badge/Amplifier-TDA2003A-red?style=for-the-badge" alt="Amp Badge">
+  <img src="https://img.shields.io/badge/Project%20Type-Hardware-yellowgreen?style=for-the-badge" alt="Hardware Badge">
+  <img src="https://img.shields.io/badge/Tone%20Control-3--Band-orange?style=for-the-badge" alt="Tone Badge">
+</p>
 
 ---
 
-## 🔊 Key Features
+## 🔊 Overview
 
-- ✅ 3-Band Active Tone Control (Bass, Midrange, Treble)
-- ✅ Class AB Output with TDA2003A
-- ✅ Up to 10W Output Power (Typical with 12V Supply)
-- ✅ Designed using discrete analog components and op-amps
-- ✅ Compact PCB Layout (Single-layer friendly)
-- ✅ Suitable for DIY audio systems, speaker boxes, and embedded audio
+A **fully analog, 3-band tone-controlled amplifier** designed around the **TDA2003A** IC. This project combines classic analog design techniques with user-friendly tone control to deliver **customizable, high-quality audio output**.
+
+> ✅ Ideal for DIY audio systems, speaker builds, and analog audio enthusiasts.
+
+---
+
+## 🖼️ Gallery
+
+<p align="center">
+  <img src="assets/front_view.jpg" width="30%" alt="Front View"/>
+  <img src="assets/tone_control.jpg" width="30%" alt="Tone Control"/>
+  <img src="assets/power_stage.jpg" width="30%" alt="Power Stage"/>
+</p>
 
 ---
 
 ## 🧩 Block Diagram
 
-[Audio In] ---> [Tone Control: Bass | Mid | Treble] ---> [TDA2003A Power Amplifier] ---> [Speaker Out]
-
-yaml
-Copy
-Edit
+<p align="center">
+  <img src="assets/block_diagram.png" width="70%" alt="Block Diagram"/>
+</p>
 
 ---
 
-## 📐 Schematic and Circuit Design
+## 🎛️ Features
 
-### 📊 Tone Control Section
-
-- **Architecture**: 3-band active tone control
-- **Op-amp used**: TL072 / NE5532
-- **Independent potentiometers** for bass, midrange, and treble
-
-![Tone Control Schematic](assets/tone_control_schematic.png)
-
-### 🔋 Power Amplifier Section
-
-- **IC Used**: TDA2003A (Class AB)
-- **Supply Voltage**: 8V–18V DC (12V Recommended)
-- **Protection**: Short-circuit and thermal protection
-
-![Power Amp Schematic](assets/power_amp_schematic.png)
+- 🎚️ **3-Band Active Tone Control** (Bass, Mid, Treble)
+- 🔉 **Class AB Power Amplification** using TDA2003A
+- ⚙️ **Discrete Analog Design** – No digital processing
+- 🔊 **Up to 10W Output @ 12V**
+- 💡 Ideal for learning analog electronics and audio circuits
 
 ---
 
-## 📦 Bill of Materials (BOM)
+## 📐 Circuit Schematics
 
-| Component       | Value               | Description                        |
-|----------------|---------------------|------------------------------------|
-| Op-Amps         | TL072 / NE5532      | Dual low-noise op-amps             |
-| TDA2003A        | -                   | Power amplifier IC                 |
-| Capacitors      | 10nF – 470µF        | Signal coupling, tone shaping      |
-| Resistors       | 1kΩ – 100kΩ         | Signal path and filters            |
-| Potentiometers  | 10kΩ or 50kΩ        | Bass, Mid, Treble Control          |
-| Power Supply    | 12V DC              | Regulated, 2A recommended          |
+### 🎨 Tone Control Section
+> Built using TL072/NE5532 op-amps with RC filters for frequency shaping.
 
----
+<p align="center">
+  <img src="assets/tone_control_schematic.png" width="80%" alt="Tone Schematic">
+</p>
 
-## 🧪 Testing & Performance
+### 🔌 Power Amplifier Section
+> Based on the TDA2003A for Class AB drive with thermal and short-circuit protection.
 
-| Parameter          | Value               |
-|-------------------|---------------------|
-| Output Power       | ~10W @ 4Ω           |
-| THD (Typ.)         | < 0.2%              |
-| Frequency Response | ~20Hz – 20kHz       |
-| SNR                | > 75dB              |
+<p align="center">
+  <img src="assets/power_amp_schematic.png" width="80%" alt="Power Amp Schematic">
+</p>
 
 ---
 
-## 🧑‍💻 Contributors
+## 📦 Bill of Materials
 
-| Name              | Role                  |
-|-------------------|-----------------------|
-| Banuka Liyanage   | Analog Design, Layout |
-| Teammate 1        | Tone Control Circuit  |
-| Teammate 2        | Testing and Assembly  |
-
-> 👥 If you'd like to contribute or improve this project, feel free to open a Pull Request!
-
----
-
-## 📁 Folder Structure
-
-📂 audio-tone-control-amplifier
-├── assets/ # Images and schematics
-├── hardware/
-│ ├── schematics/ # Circuit diagrams (.png, .pdf)
-│ └── pcb/ # PCB files (Gerber, Eagle/Altium)
-├── docs/ # Datasheets, app notes
-├── README.md
-└── LICENSE
-
-yaml
-Copy
-Edit
+| Component        | Value / Part No       | Function                       |
+|------------------|------------------------|--------------------------------|
+| Op-Amp IC         | TL072 / NE5532         | Tone Control Amplification     |
+| Power Amp IC      | TDA2003A               | Power Amplifier                |
+| Potentiometers    | 10kΩ/50kΩ (x3)         | Bass, Mid, Treble Adjustments  |
+| Capacitors        | 10nF – 470µF           | Coupling, Filtering            |
+| Resistors         | 1kΩ – 100kΩ            | Biasing, Filter Control        |
+| Power Supply      | 12V @ 2A               | Input Power                    |
 
 ---
 
-## 📄 License
+## 📊 Performance
 
-This project is licensed under the MIT License. See [LICENSE](LICENSE) for more details.
-
----
-
-## 📬 Contact
-
-If you have any feedback, suggestions, or want to share your version of the amp, please feel free to reach out:
-
-- 📧 Email: [your.email@example.com]
-- 🔗 LinkedIn: [linkedin.com/in/yourprofile]
-- 🌐 Project Page (if available)
+| Metric              | Value                  |
+|---------------------|------------------------|
+| Output Power        | ~10W @ 4Ω              |
+| Frequency Range     | 20Hz – 20kHz           |
+| Total Harmonic Distortion (THD) | < 0.2%    |
+| Signal-to-Noise Ratio | > 75dB               |
 
 ---
 
-## 🌟 Star this repo!
+## 🧪 Testing Setup
 
-If you like this project, don’t forget to ⭐ star the repository and share it with audio enthusiasts and makers!
+<p align="center">
+  <img src="assets/testing_setup.jpg" width="70%" alt="Testing Setup">
+</p>
+
+---
+
+## 🧑‍🤝‍🧑 Meet the Team
+
+| Name             | Role                          |
+|------------------|-------------------------------|
+| **Banuka Liyanage** | Analog Design, Schematic, PCB |
+| Teammate 1       | Tone Control Research & Testing |
+| Teammate 2       | Assembly, Troubleshooting     |
+
+---
+
+## 📁 Repository Structure
+
+```plaintext
+📦 Audio-Tone-Control-Amplifier
+ ┣ 📂 assets/
+ ┃ ┣ 📄 banner.png
+ ┃ ┣ 📄 tone_control.jpg
+ ┃ ┣ 📄 power_stage.jpg
+ ┃ ┣ 📄 block_diagram.png
+ ┃ ┗ 📄 testing_setup.jpg
+ ┣ 📂 hardware/
+ ┃ ┣ 📄 schematic.pdf
+ ┃ ┗ 📄 pcb_layout.pdf
+ ┣ 📄 README.md
+ ┣ 📄 LICENSE
+📜 License
+This project is licensed under the MIT License. You are free to use, modify, and distribute this project with attribution.
+
+🌟 Show Your Support
+If you like this project:
+
+⭐ Star the repo
+
+🛠️ Fork and improve
+
+📣 Share with fellow audio enthusiasts
+
+<p align="center"> <img src="assets/wave_banner.png" width="100%" alt="Thank you banner"> </p> ```
