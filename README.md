@@ -116,7 +116,7 @@ A **fully analog, 3-band tone-controlled amplifier** designed around the **TDA20
 
 ## 📁 Repository Structure
 
-```plaintext
+
 📦 Audio-Tone-Control-Amplifier
  ┣ 📂 assets/
  ┃ ┣ 📄 banner.png
